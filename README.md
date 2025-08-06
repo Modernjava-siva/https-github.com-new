@@ -1,54 +1,48 @@
 # https-github.com-new
-# 🔐 Message Encryption and Decryption with QA Testing
+# 🔐 Message Encryption and Decryption (Python)
 
-This project simulates a basic message encryption/decryption tool using Python. It also showcases foundational quality assurance (QA) practices such as test case design, bug tracking, and functional testing — making it ideal for aspiring Software Testers.
-
----
-
-## ✨ Features
-
-- Caesar Cipher-based encryption and decryption
-- Handles text input with letters, numbers, and symbols
-- File input/output operations for encrypted content
-- Manual test cases designed for all features
-- Simulated bug tracking using a Jira-style Excel tracker
+This project implements a simple encryption and decryption tool using Python. It also simulates basic QA processes including test case design, bug tracking, and validation of inputs and outputs.
 
 ---
 
-## 📁 Project Files
+## 📌 Features
 
-| File | Description |
-|------|-------------|
-| `encrypt_decrypt.py` | Python script for encryption & decryption |
-| `encrypted_output.txt` | Sample encrypted data |
-| `Message_Encryption_QA_Docs.xlsx` | Manual test cases and bug log |
-| `README.md` | Project overview |
-| `test_cases.xlsx` *(optional)* | Separate sheet for test cases |
-| `bug_log.xlsx` *(optional)* | Separate bug tracking file |
+- Encrypts plain text using Caesar Cipher and XOR-based logic.
+- Decrypts encoded messages back to original.
+- File input/output support for storing and loading encrypted data.
+- Logs encrypted messages into a local SQLite database (optional).
+- Includes manual test case simulation and mock bug tracking (Jira-style).
 
 ---
 
-## 🧪 QA Testing Approach
+## 🛠️ Technologies Used
 
-- **Testing Types**: Functional Testing, Boundary Testing, Negative Testing
-- **Tools Used**: Python, Excel, Mock Jira board
-- **Test Coverage**:
-  - Encryption output for different input types
-  - File handling validation
-  - Error handling for invalid or empty input
+- **Language**: Python 3
+- **Tools**: Notepad++, Command Line, SQLite (optional)
+- **QA Tools**: Manual test cases, Mock Jira board (Excel/Google Sheets)
 
 ---
 
-## 📋 Manual Test Documentation
+## ✅ Functionalities
 
-Test documentation and bug tracking are included in `Message_Encryption_QA_Docs.xlsx`, which contains:
-- ✅ Test cases with expected and actual results
-- 🐞 Bug log with severity, steps to reproduce, and resolution status
+| Function        | Description                                |
+|----------------|--------------------------------------------|
+| Encrypt Text    | Takes input and applies Caesar Cipher      |
+| Decrypt Text    | Reverses the encryption                    |
+| Save to File    | Stores the output in a `.txt` file         |
+| Read from File  | Reads and decrypts content from file       |
+| Log to DB       | (Optional) Stores data in SQLite           |
 
 ---
 
-## 🚀 Getting Started
+## 🧪 QA Process (Manual Testing)
 
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/message-encryption-decryption-python.git
+- **Functional Testing** for encryption/decryption logic
+- **Boundary Testing** with long and special character inputs
+- **Negative Testing** for empty strings, invalid keys
+- **Bug Reporting** simulated via mock Jira board
+
+---
+
+## 📁 Folder Structure
+
